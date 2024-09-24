@@ -1,0 +1,195 @@
+<!--Index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pride Flag</title>
+    <link rel="stylesheet" href="CSS/one_page_website.css">
+    <script src="JS/one_page_website.js"></script>
+</head>
+<body>
+    
+<!-- nav -->   
+<div>
+    <div>
+        <ul>
+            <a href="#home"><li>HOME</li></a>
+            <a href="#gallery"><li>GALLERY</li></a>
+            <a href="#contact"><li>SIGN UP</li></a>
+        </ul>
+    </div>
+</div>   
+<!-- end of nav -->  
+
+<!-- Home -->
+<div id="home">
+    <div>
+        <div>
+            <span>The Pride Flag</span>
+        </div>
+    </div>
+</div>
+<!-- End of Home -->
+
+<!-- GALLERY -->
+<section>
+    <div id="gallery">
+        <h1>Gallery</h1>
+    </div>
+        <!--Images to open the Lightbox-->
+    <div class="row">
+        <div class="column">
+            <img src="Images/red.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="red">
+        </div>
+        <div class="column">
+            <img src="Images/orange.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="orange">
+        </div>
+
+        <div class="column">
+            <img src="Images/yellow.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="yellow">
+        </div>
+
+        <div class="column">
+            <img src="Images/green.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="green">
+        </div>
+
+        <div class="column">
+            <img src="Images/turquoise.png" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="turquoise">
+        </div>
+
+        <div class="column">
+            <img src="Images/indigo.png" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="indigo">
+        </div>
+
+        <div class="column">
+            <img src="Images/violet.png" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="violet">
+        </div>
+    </div>
+
+    <!-- The Modal Lightbox-->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 7</div>
+                <img src="Images/red.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 7</div>
+                <img src="Images/orange.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 7</div>
+                <img src="Images/yellow.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 7</div>
+                <img src="Images/green.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 7</div>
+                <img src="Images/turquoise.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img src="Images/indigo.png" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <img src="Images/violet.png" style="width: 100%;">
+            </div>
+
+            <!-- Next and previous controls-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/red.png" onclick="currentSlide(1)" alt="red">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/orange.png" onclick="currentSlide(2)" alt="orange">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/yellow.png" onclick="currentSlide(3)" alt="yellow">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/green.png" onclick="currentSlide(4)" alt="green">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/turquoise.png" onclick="currentSlide(5)" alt="turquoise">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/indigo.png" onclick="currentSlide(6)" alt="indigo">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/violet.png" onclick="currentSlide(7)" alt="violet">
+            </div>
+        </div>
+    </div>
+
+
+            <!-- VIDEO -->
+            <div>
+                <iframe  width="420" height="315"
+                src="https://www.youtube.com//embed/KIQOLuEPr6Q" frameborder="0"></iframe>
+            </div>
+            <!--END VIDEO-->
+        </div>
+    </div>
+</section>
+<!-- END OF GALLERY -->
+
+<!-- SIGNUP -->
+<section>
+    <div id="contact">
+        <div>
+            <h1>Sign up</h1>
+            <div>
+                <h2><span>Be a part of the queer agenda.</span>
+                <br/>Sign Up here:
+                </h2>
+                <div>
+                    <form action="" method="post">
+                        <input classs="signup" type="text" value="">
+                        <input classs="signup" type="text" value="">
+                        <input classs="signup" type="text" value="">
+                        <input classs="signup" type="text" value="">
+                        <div class="form-spacer">
+                            <label class="terms">What to expect</label>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- END OF SIGNUP -->
+
+<!-- FOOTER -->
+<div id="footer">
+    Lucas Martins &copy; 2024
+</div>
+<!-- END OF FOOTER -->
+</body>
+</html>
